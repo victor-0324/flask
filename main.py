@@ -20,8 +20,8 @@ def cartela():
 # Tela do jogo da velha 
 @app.route("/jogodavelha/", methods=["GET","POST"])
 def velha():
-    usuarios1 = request.form.get('name')
-    return render_template("/indexx.html",nome1=usuarios1.upper())
+    
+    return render_template("/indexx.html")
 
 
 
