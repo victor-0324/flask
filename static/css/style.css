@@ -32,6 +32,8 @@ img {
 body {
     color: var(--text-color);
     background: var(--dark-color);
+    background-image: url(bingo_ft.png);
+    
 }
 
 .container {
@@ -63,7 +65,7 @@ body {
 }
 
 .logo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: var(--text-color);
     text-transform: uppercase;

@@ -56,21 +56,11 @@
     </header>
 
     <!-- início da seleção de casa -->
-    <section class="home container " id="home ">
-        <img srcset="{{ url_for( 'static',filename='img/istockphoto-1205079090-170667a.jpg' )}} " alt=" ">
-        <div class="home-text">
-            <h1>
-                <BR>ON-LINE</BR>
-            </h1>
-        </div>
-    </section>
-    <div class="btn">
-        <P> Desejo boas vindas estou muito ansioso pela sua chegada <br>e muito feliz pela sua presença! Seja muito bem-vindo, amigo!
-        </P>
-    </div>
+</section>
     <section class="home container" id="login">
-        <form action="/cartela/" target="_blank" method="POST">
-            <div class="label-float">
+        <form action="/cartela" target="_blank" method="POST">
+           <h2>Gere sua cartela e boa sorte!</h2>   
+            <div class="label-float">     
                 <input type="text" placeholder=" " name="name" maxlength="15" required/>
                 <label>Digite seu nome</label>
 
@@ -78,44 +68,8 @@
             </div>
         </form>
     </section>
-
-
-
-
-    <!-- fim da seleção inicial -->
-    <!-- início da seção de tendências -->
-
-    <!-- <section class="trending container " id="trending ">
-        <div class="heading">
-            <i class='bx bxs-flame'></i>
-            <h2>jogos em alta </h2>
-        </div> -->
-    <!-- content -->
-    <!-- <div class="trending-content swiper ">
-            <div class="swiper-wrapper "> -->
-    <!-- slide 1 -->
-    <!-- <div class="swiper-slide ">
-                    <div class="box ">
-                        <img srcset="{{ url_for( 'static',filename='img/indice.png' )}} " alt=" ">
-                        <div class="box-text ">
-                            <h2> Jogo da velha </h2> -->
-    <!-- 
-                            <div class="rating-download ">
-                                <div class="rating "> -->
-    <!-- estrelinha  -->
-    <!-- <i class='bx bxs-star bx-spin'></i>
-                                    <span>4.7</span>
-                                </div> -->
-    <!-- emoji de download -->
-    <!-- <a href="#" class="box-btn "> <i class='bx bxs-download bx-tada'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- <section class="home container">
-            <form action="/jogodavelha/" method="POST">
+    <section class="home container">
+            <form action="/jogodavelha" method="POST">
                 <div class="label-float">
                     <input type="text" placeholder=" " name="name" maxlength="25" required/>
                     <label>Jogador 1 ( X ) Jogador 2 </label>
@@ -123,7 +77,7 @@
                     <a href="#" name="name"><button class="btn"> &#128525;  Jogar agora    &#128536; </button></a>
                 </div>
             </form>
-        </section> -->
+        </section> 
     </section>
 
     <!-- final da seção de tendências -->

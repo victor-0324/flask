@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=["GET","POST"])
 def index():
+    # nome_jogador = request.form('name')
     return render_template('index.html') 
-    nome_jogador = request.form('name')
-
+    
 # Tela Das Cartelas
-@app.route("/cartela/", methods=["GET","POST"])
+@app.route("/cartela", methods=["GET","POST"])
 def cartela():
     usuario = request.form.get('name')
     return render_template("/cartela.html",nome=usuario.upper())
@@ -18,16 +18,16 @@ def cartela():
 
 
 # Tela do jogo da velha 
-@app.route("/jogodavelha/", methods=["GET","POST"])
+@app.route("/jogodavelha", methods=["GET","POST"])
 def velha():
     usuarios1 = request.form.get('name')
-    return render_template("/indexx.html",nome1=usuarios1.upper())
+    return render_template("/indexx.html")
 
 
 
 
 # Tela do narrador 
-@app.route("/narrador/")
+@app.route("/narrador")
 def narrador():
     return render_template('/narrador.html')
 
