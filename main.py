@@ -27,7 +27,7 @@ def velha():
 
 
 # Tela do narrador 
-@app.route("/narrador")
+@app.route("/narrador/")
 def narrador():
     return render_template('/narrador.html')
 
