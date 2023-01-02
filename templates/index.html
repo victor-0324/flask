@@ -17,10 +17,9 @@
     <header>
         <div class="nav container">
             <a href="/" class="logo">Jogo <br> <span>Do Bingo</span></a>
-
             <div class="nav-icons">
                 <i class='bx bx-bell bx-tada' id="bell-icon"><span></span></i>
-                <i class='bx bxs-download'></i>
+                
                 <div class="menu-icon">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -33,7 +32,7 @@
                 </p> -->
                 <div class="navbar">
                     <li> <a href="#login">Contatos</a></li>
-                    <li> <a href="/narrador">Sala do narrador</a></li>
+                    <li> <a target="_blank"  href="/narrador">Sala do narrador</a></li>
                     <li> <a href="/">Sobre nós</a></li>
                     <li> <a href="https://github.com/victor-0324" target="_blank">Github Vitor</a></li>
                     <li> <a href="https://github.com/YaraMaria-ux" target="_blank">Github Yara</a></li>
@@ -54,21 +53,21 @@
             </div>
         </div>
     </header>
-<h2>Gere sua cartela e boa sorte!</h2>   
     <!-- início da seleção de casa -->
     <section class="home container" id="login">
         <form action="/cartela" target="_blank" method="POST">
-           
-            <div class="label-float">     
+           <!-- <h2> Pegue sua cartela do bingo </h2>  -->
+            <div class="label-float"> 
+                   
                 <input type="text" placeholder=" " name="name" maxlength="15" required/>
                 <label>Digite seu nome</label>
-
                 <a href="#"><button class="btn"> &#127808; Pegue sua cartela &#127808; </button></a>
             </div>
         </form>
     </section>
     <section class="home container">
             <form action="/jogodavelha" method="POST">
+                <!-- <h2>Jogue o jogo da velha</h2> -->
                 <div class="label-float">
                     <input type="text" placeholder=" " name="name" maxlength="25" required/>
                     <label>Jogador 1 ( X ) Jogador 2 </label>
