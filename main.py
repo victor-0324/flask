@@ -21,7 +21,7 @@ def cartela():
 @app.route("/jogodavelha", methods=["GET","POST"])
 def velha():
     usuarios1 = request.form.get('name')
-    return render_template("/indexx.html")
+    return render_template("/")
 
 
 

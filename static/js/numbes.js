@@ -94,6 +94,7 @@ let numeros = ['0', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', 
     '69', '70', '71', '72', '73', '74', '75',
 ]
 
+  
 botaoSortear.addEventListener("click", () => {
     // GLOBO GIRANDO   
     let painel = Math.floor(Math.random() * numeros.length)
